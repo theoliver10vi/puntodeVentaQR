@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditarArticulo</class>
+ <widget class="QMainWindow" name="EditarArticulo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: rgb(255, 255, 255);
+}
+
+QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 18pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox
+{
+	border-width: .8px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170)
+}
+
+QGroupBox QPushButton
+{
+	border-width: 0px;
+	font: 18pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(0, 0, 127)
+}
+
+QGroupBox QLabel
+{
+	border-width: 0px;
+	font: 18pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QLineEdit
+{
+	border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+}
+
+QTableWidget
+{
+border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 75 10pt &quot;Century Gothic&quot;;
+	color:rgb(82, 150, 170)	
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnRegresar">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imagenes.qrc">
+      <normaloff>:/imagenes/regresar.png</normaloff>:/imagenes/regresar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>791</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoBBVA">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/imagenes/logoBBVA.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="barraBBVA">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>47</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/imagenes/barraColores.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBuscar">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>100</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGuardarCambios">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>520</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar Cambios</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>581</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">border-width: 0px;
+	font: 13pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+           </property>
+           <property name="text">
+            <string>Nombre:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineNombre"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">border-width: 0px;
+	font: 13pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+           </property>
+           <property name="text">
+            <string>Marca:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineMarca"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-width: 0px;
+	font: 13pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+           </property>
+           <property name="text">
+            <string>Precio:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineMarca_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">border-width: 0px;
+	font: 13pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+           </property>
+           <property name="text">
+            <string>Código de barras:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineMarca_3"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">border-width: 0px;
+	font: 13pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+           </property>
+           <property name="text">
+            <string>Stock:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineMarca_4"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnSeleccionarArt">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>150</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 14pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 16pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}</string>
+    </property>
+    <property name="text">
+     <string>Seleccionar</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

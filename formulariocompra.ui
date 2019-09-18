@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>formularioCompra</class>
+ <widget class="QWidget" name="formularioCompra">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: rgb(255, 255, 255);
+}
+
+QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 23pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox
+{
+	border-width: .8px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170)
+}
+
+QGroupBox QPushButton
+{
+	border-width: 0px;
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(0, 0, 127)
+}
+
+QGroupBox QLabel
+{
+	border-width: 0px;
+	font: 18pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QLineEdit
+{
+	border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+}
+
+QTableWidget
+{
+border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 75 10pt &quot;Century Gothic&quot;;
+	color:rgb(82, 150, 170)	
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>610</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="barraBBVA">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>47</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/barraColores.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoBBVA">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>70</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/logoBBVA.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>751</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Compra</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>40</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precio:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>100</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>340</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
+    </property>
+    <property name="text">
+     <string>Agregar</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>420</y>
+      <width>751</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>540</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pagar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botonTienda_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imagenes.qrc">
+      <normaloff>:/imagenes/regresar.png</normaloff>:/imagenes/regresar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>logoBBVA</zorder>
+   <zorder>barraBBVA</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>botonTienda_2</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

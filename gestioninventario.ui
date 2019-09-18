@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gestionInventario</class>
+ <widget class="QWidget" name="gestionInventario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: rgb(255, 255, 255);
+}
+
+QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 23pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox
+{
+	border-width: .8px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170)
+}
+
+QGroupBox QPushButton
+{
+	border-width: 0px;
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(0, 0, 127)
+}
+
+QGroupBox QLabel
+{
+	border-width: 0px;
+	font: 18pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QLineEdit
+{
+	border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+}
+
+QTableWidget
+{
+border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 75 10pt &quot;Century Gothic&quot;;
+	color:rgb(82, 150, 170)	
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>891</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="barraBBVA">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>47</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/barraColores.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoBBVA">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>500</y>
+      <width>291</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/imagenes/logoBBVA.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iconoTienda">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/imagenes/iconoInventario.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botonTienda_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imagenes.qrc">
+      <normaloff>:/imagenes/regresar.png</normaloff>:/imagenes/regresar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>661</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 23pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}</string>
+    </property>
+    <property name="title">
+     <string>Inventario</string>
+    </property>
+    <widget class="QPushButton" name="btnBuscarArt">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Buscar artículos</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAdmnistrarArticulos">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>381</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Administrar Artículos</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>logoBBVA</zorder>
+   <zorder>barraBBVA</zorder>
+   <zorder>iconoTienda</zorder>
+   <zorder>botonTienda_2</zorder>
+   <zorder>groupBox</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

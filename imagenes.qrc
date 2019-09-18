@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagenes/carrito.png</file>
+        <file>imagenes/barraColores.jpg</file>
+        <file>imagenes/logoBBVA.jpg</file>
+        <file>imagenes/tienda.png</file>
+        <file>imagenes/logoBancomer.jpg</file>
+        <file>imagenes/regresar.png</file>
+        <file>imagenes/iconoInventario.png</file>
+        <file>imagenes/iconoGanancias.jpg</file>
+        <file>imagenes/iconoGanancias.png</file>
+        <file>imagenes/previous.png</file>
+        <file>imagenes/search.png</file>
+    </qresource>
+</RCC>

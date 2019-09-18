@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Administrar_Articulos</class>
+ <widget class="QMainWindow" name="Administrar_Articulos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: rgb(255, 255, 255);
+}
+
+QPushButton
+{
+	border-width: 1.5px;
+	border-color: rgb(82, 150, 170);
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 18pt &quot;Yu Gothic&quot;;
+
+	color:rgb(82, 150, 170)
+}
+
+QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox
+{
+	border-width: .8px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:5px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170)
+}
+
+QGroupBox QPushButton
+{
+	border-width: 0px;
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QGroupBox QPushButton:hover
+{
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(0, 0, 127)
+}
+
+QGroupBox QLabel
+{
+	border-width: 0px;
+	font: 18pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);
+}
+
+QLineEdit
+{
+	border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+}
+
+QTableWidget
+{
+border-width: 2px;
+	border-color: rgb(82, 150, 170);
+	border-style: inset;
+	border-radius:10px;
+	padding: 0 8px;
+	background-color:rgb(255, 255, 255);
+	font: 75 10pt &quot;Century Gothic&quot;;
+	color:rgb(82, 150, 170)	
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="logoBBVA">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/imagenes/logoBBVA.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRegresar">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>10</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imagenes.qrc">
+      <normaloff>:/imagenes/regresar.png</normaloff>:/imagenes/regresar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="barraBBVA">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>47</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/imagenes/barraColores.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>791</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>220</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 0px;
+	font: 20pt &quot;Yu Gothic&quot;;
+	color:rgb(82, 150, 170);</string>
+    </property>
+    <property name="text">
+     <string>Artículos</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>79</x>
+      <y>136</y>
+      <width>781</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnAgregarArt">
+       <property name="text">
+        <string>Agregar Artículo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnEditarArt">
+       <property name="text">
+        <string>Editar Artículo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnEliminarArt">
+       <property name="text">
+        <string>Eliminar Artículo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
